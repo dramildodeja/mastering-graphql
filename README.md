@@ -24,6 +24,7 @@ GraphQL Subscriptions:
 
 # Local Application Setup & Run
 
+- Install Node/NPM following this link - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm (if you don't have it installed)
 - Run 'npm install' in root directory
 - Run 'npm run start' to start server
 - Open the playground in your browser at: http://localhost:4000/
