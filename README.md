@@ -30,11 +30,11 @@ GraphQL Subscriptions:
 
 # Sample Queries
 
-query {
+- query {
   healthCheck
 }
 
-query {
+- query {
   users {
     id,
     name,
@@ -42,7 +42,7 @@ query {
   }
 }
 
-mutation {
+- mutation {
   createUser(data: {
     name: "new user"
     age: 39
@@ -53,7 +53,7 @@ mutation {
   }
 }
 
-subscription {
+- subscription {
   comment (postId: 1) {
     mutation
     data {      
@@ -65,7 +65,7 @@ subscription {
   }
 }
 
-mutation {
+- mutation {
   createComment(data: {    
     body: "Test Subscription"
     userId: 1
@@ -79,7 +79,7 @@ mutation {
   }
 }
 
-mutation {
+- mutation {
   deleteUser(id:4) {
     name
   }
