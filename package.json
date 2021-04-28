@@ -1,0 +1,24 @@
+{
+  "name": "mastering-graphql",
+  "version": "1.0.0",
+  "description": "Sogeti Technight Series April 2021",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js --ext js,graphql --exec babel-node"
+  },
+  "author": "Dramil M Dodeja - dramil.dodeja@sogeti.com",
+  "license": "Dramil M Dodeja",
+  "dependencies": {
+    "apollo-server": "^2.15.0",
+    "graphql": "^15.2.0",
+    "graphql-subscriptions": "^1.1.0",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6"
+  }
+}
