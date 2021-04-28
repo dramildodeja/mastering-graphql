@@ -32,7 +32,7 @@ Run 'npm run start' to start server
 
 Open the playground in your browser at: http://localhost:4000/
 
-Sample Queries
+# Sample Queries
 
 query {
   healthCheck
@@ -57,7 +57,6 @@ mutation {
   }
 }
 
-# subscription:
 subscription {
   comment (postId: 1) {
     mutation
@@ -70,7 +69,6 @@ subscription {
   }
 }
 
-# mutation that was run after subscription:
 mutation {
   createComment(data: {    
     body: "Test Subscription"
