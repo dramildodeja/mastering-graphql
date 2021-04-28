@@ -22,14 +22,10 @@ GraphQL Subscriptions:
 - Sub to changes on a post
 - Sub to comments on a post
 
-### Local Application Setup
+# Local Application Setup & Run
 
 Run 'npm install' in root directory
-
-### Run
-
 Run 'npm run start' to start server
-
 Open the playground in your browser at: http://localhost:4000/
 
 # Sample Queries
