@@ -24,9 +24,9 @@ GraphQL Subscriptions:
 
 # Local Application Setup & Run
 
-Run 'npm install' in root directory
-Run 'npm run start' to start server
-Open the playground in your browser at: http://localhost:4000/
+- Run 'npm install' in root directory
+- Run 'npm run start' to start server
+- Open the playground in your browser at: http://localhost:4000/
 
 # Sample Queries
 
