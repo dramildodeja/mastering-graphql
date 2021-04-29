@@ -22,12 +22,66 @@ GraphQL Subscriptions:
 - Sub to changes on a post
 - Sub to comments on a post
 
-### Local Application Setup
+# Local Application Setup & Run
 
-Run 'npm install' in root directory
+- Install Node/NPM following this link - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm (if you don't have it installed)
+- Run 'npm install' in root directory
+- Run 'npm run start' to start server
+- Open the playground in your browser at: http://localhost:4000/
 
-### Run
+# Sample Queries
 
-Run 'npm run start' to start server
+- query {
+  healthCheck
+}
 
-Open the playground in your browser at: http://localhost:4000/
+- query {
+  users {
+    id,
+    name,
+    email
+  }
+}
+
+- mutation {
+  createUser(data: {
+    name: "new user"
+    age: 39
+    email: "newuser@new.com"
+  }) {
+    id
+    name
+  }
+}
+
+- subscription {
+  comment (postId: 1) {
+    mutation
+    data {      
+      user {
+        name,
+        email
+      }
+    }
+  }
+}
+
+- mutation {
+  createComment(data: {    
+    body: "Test Subscription"
+    userId: 1
+    post: 1
+  }) {
+    body
+    user {
+      name,
+      email
+    }
+  }
+}
+
+- mutation {
+  deleteUser(id:4) {
+    name
+  }
+}
